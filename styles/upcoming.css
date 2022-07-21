@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*---------Common Styles or Utilities--------*/
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --navy-blue: #130f40;
+    --white: #fff;
+    --gray: #dfe4ea;
+}
+
+/*-----------Header Section-----------*/
+
+.container {
+    width: 90%;
+    height: 75vh;
+    background-color: var(--navy-blue);
+    display: flex;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.header-title {
+    width: 50%;
+    padding-top: 12%;
+    padding-left: 45px;
+    color: var(--white);
+}
+
+.header-title h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.header-title p {
+    font-size: 0.75em;
+    padding-top: 12px;
+}
+
+.header-btn-div {
+    padding-top: 12px;
+}
+
+.header-btn {
+    text-decoration: none;
+    background: tomato;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.header-btn:hover {
+    background: none;
+    border: 1px solid orange;
+    color: orange;
+    padding: 9px 19px;
+    cursor: pointer;
+}
+
+.btn-span {
+    padding-left: 10px;
+}
+
+.header-image {
+    width: 50%;
+
+}
+
+.header-image img {
+    width: 84%;
+    height: 75vh;
+    padding-top: 100px;
+}
+
+/*-----------Match Section-----------*/
+
+.match-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.match-left-div {
+    width: 22%;
+    height: 219px;
+    background-color: var(--navy-blue);
+    text-align: center;
+}
+
+.left-btn {
+    text-decoration: none;
+    background: var(--white);
+    color: black;
+    font-size: 1em;
+    padding: 12px 28px;
+    border-radius: 5px;
+    transition: .5s;
+    display: inline-block;
+    margin-top: 18px;
+    width: 85%;
+}
+
+.red {
+    background-color: tomato;
+    color: var(--white);
+}
+
+.match-right-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 22px;
+
+}
+
+.match-cards {
+    margin-left: 25px;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    padding: 42px 25px 30px;
+}
+
+.card-image {
+    display: flex;
+    align-items: center;
+}
+
+.vs {
+    padding: 0 12px 0;
+    font-size: 0.80em;
+    font-weight: bold;
+}
+
+.card-detail h5 {
+    padding-top: 15px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-detail p {
+    font-size: 0.90em;
+    text-align: center;
+}
+
+/*-----------Footer Section-----------*/
+
+footer {
+    background-color: var(--navy-blue);
+    margin-top: 60px;
+}
+
+footer h3 {
+    font-size: 2em;
+    color: var(--white);
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 25px;
+}
+
+hr {
+    width: 100%;
+    color: #b2bec3;
+    text-align: center;
+}
+
+.footer-details {
+    width: 70%;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.footer-detail {
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+    padding-top: 20px;
+}
+
+.footer-sub-title {
+    font-size: 1em;
+}
+
+.footer-contact-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+
+}
+
+.footer-contact-link i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 22px;
+    color: var(--white);
+    text-align: center;
+    border: 1px solid tomato;
+    margin-right: 15px;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.footer-contact-link i:hover {
+    background: none;
+    transform: translateY(-10px);
+    border: 1px solid orange;
+    color: orange;
+    cursor: pointer;
+}
+
+/* -----------------
+     Media Querise
+---------------- */
+
+/*-------- Mobile Devices--------- */
+@media only screen and (max-width: 688px) {
+    .container {
+        width: 90%;
+        height: 40%;
+        flex-direction: column;
+    }
+
+    .header-title {
+        width: 100%;
+        padding-top: 10vh;
+        text-align: center;
+    }
+
+    .header-title h1 {
+        font-size: 2.2em;
+        padding-right: 50px;
+        margin-bottom: 10px;
+    }
+
+    .header-sub-title {
+        width: 60%;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .short-text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 0.95em;
+        padding-top: 12px;
+        font-size: 0.75em;
+        padding-right: 40px;
+    }
+
+    .header-btn-div {
+        padding-top: 12px;
+        padding-right: 40px;
+    }
+
+    .header-image {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .header-image img {
+        width: 100%;
+        padding-top: 25px;
+    }
+
+    .match-container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        margin: 0 auto;
+    }
+
+    .match-left-div {
+        width: 80%;
+        background-color: white;
+        text-align: center;
+    }
+
+    .left-btn {
+        text-decoration: none;
+        background: var(--white);
+        color: black;
+        font-size: 1.2em;
+        padding: 12px 35px;
+        border-radius: 5px;
+        transition: .5s;
+        display: inline-block;
+        margin-top: 18px;
+        border: 1px solid gray;
+    }
+
+    .red {
+        background-color: tomato;
+        color: var(--white);
+        border: none;
+    }
+
+    footer h3 {
+        font-size: 1.8em;
+    }
+
+    .footer-detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-contact-link {
+        margin-top: 35%;
+    }
+
+    .view-all {
+        display: none;
+    }
+}
+
+/*-------- Tablet Devices--------- */
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .container {
+        width: 90%;
+        height: 90vh;
+    }
+
+    .header-title {
+        width: 50%;
+        padding-top: 30px;
+    }
+
+    .header-image {
+        width: 50%;
+    }
+
+    .header-image img {
+        width: 100%;
+        height: 90vh;
+    }
+
+    .header-title h1 {
+        font-size: 1.8em;
+    }
+
+    .header-title p {
+        font-size: 0.70em;
+        padding-top: 8px;
+    }
+
+    .match-left-sub-div a {
+        display: flex;
+        flex-direction: row;
+        padding: 35px 0;
+    }
+
+    .match-left-sub-div a {
+        width: 30%;
+        padding: 35px 0;
+        background-color: red;
+    }
+
+    .view-all {
+        display: block;
+    }
+
+    .footer-detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-contact-link {
+        margin-top: 20px;
+    }
+
+}
